@@ -1,0 +1,11 @@
+:root {
+  font-family: open-sans, sans-serif;
+}
+
+$primary-color: #3e3ea2;
+$secondary-color: #76a1ec;
+$accent-color: #305ede;
+
+@import "./home/shapeAccordion";
+@import "./home/sidePanel";
+@import "./home/canvas";

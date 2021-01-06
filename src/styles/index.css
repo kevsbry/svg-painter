@@ -1,0 +1,177 @@
+:root {
+  font-family: open-sans, sans-serif;
+}
+
+.accordion {
+  background: #305ede;
+  color: #fff;
+  max-width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+  margin-top: 0.8em;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.accordion .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion .title-container h4 {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0.5em;
+}
+
+.accordion .title-container .arrow-icon {
+  margin-right: 0.5em;
+  font-size: 1.4rem;
+  color: #fff;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.accordion .title-container .arrow-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.accordion .title-container .arrow-icon.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.accordion .accordion-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 150ms ease-in-out;
+  transition: max-height 150ms ease-in-out;
+}
+
+.accordion .accordion-settings input {
+  width: 45%;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: 0;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.accordion .accordion-settings input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.accordion .accordion-settings .save-settings {
+  margin-bottom: 0.5em;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  background: #d83e3e;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border: 0;
+  border-radius: 4px;
+  -webkit-transition: 150ms background ease-in-out;
+  transition: 150ms background ease-in-out;
+}
+
+.accordion .accordion-settings .save-settings:hover {
+  cursor: pointer;
+  background: #ed4949;
+  -webkit-transition: 150ms background ease-in-out;
+  transition: 150ms background ease-in-out;
+}
+
+.accordion .accordion-settings.active {
+  max-height: 250px;
+  -webkit-transition: max-height 150ms ease-in-out;
+  transition: max-height 150ms ease-in-out;
+}
+
+.side-panel {
+  background: #3e3ea2;
+  width: 21vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-panel .add-shape--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.side-panel .add-shape--container .add-shape--icon {
+  font-size: 3.5rem;
+  color: #fff;
+  opacity: 0.8;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.side-panel .add-shape--container .add-shape--icon:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 79vw;
+  height: 100vh;
+  background: #eaeaea;
+}
+/*# sourceMappingURL=index.css.map */
